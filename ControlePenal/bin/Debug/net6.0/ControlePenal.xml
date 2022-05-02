@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ControlePenal</name>
+    </assembly>
+    <members>
+        <member name="M:ControlePenal.Application.CriminalCodeApp.CreateCriminalCodeAsync(ControlePenal.Models.CriminalCodeModel)">
+            <summary>
+            Função responsavel por criar e salvar o Codigo Penal na base de dados
+            </summary>
+            <param name="criminalCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Application.CriminalCodeApp.DeleteCriminalCodeAsync(System.String)">
+            <summary>
+            Funcão responsavel por Deletar o Codigo penal da base de dados
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Application.CriminalCodeApp.GetCriminalCodeAsync(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Função responsavel por filtrar os campos da base de dados.
+            </summary>
+            <param name="filter"></param>
+            <param name="by"></param>
+            <param name="orderBy"></param>
+            <param name="way"></param>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Application.CriminalCodeApp.GetAsync(System.Int32)">
+            <summary>
+            Função responsavel por pesquisar um Codigo penal especifico
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Application.CriminalCodeApp.EditCriminalCodeAsync(System.Int32,ControlePenal.Models.CriminalCodeModel)">
+            <summary>
+            Função responsavel por editar um codigo penal especifico
+            </summary>
+            <param name="id"></param>
+            <param name="criminalCodeModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Application.LoginApp.Login(ControlePenal.Models.LoginModel)">
+            <summary>
+            Função responsavel por Logar o Usuario 
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Controllers.AuthController.Login(ControlePenal.Models.LoginModel)">
+            <summary>
+            Realiza o login de usuario
+            </summary>
+            <param name="loginUser"></param>
+            <response code="200">Retorno Sucesso Login</response>
+            <response code="400">Retorno Falha na tentativa de login</response>
+            <returns>Token, expiration, id</returns>
+        </member>
+        <member name="M:ControlePenal.Controllers.CriminalCodeController.Create(ControlePenal.Models.CriminalCodeModel)">
+            <summary>
+            Criação de Codigo Penal
+            </summary>
+            <param name="criminalcode">Modelo para criação do Criminal Code</param>
+            <response code="200">Retorno Sucesso criação</response>
+            <response code="400">Retorno Falha criação</response>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Controllers.CriminalCodeController.Delete(System.String)">
+            <summary>
+            Deletar Codigo Penal
+            </summary>
+            <param name="id"> ID para deletar na base de dados</param>
+            <response code="200">Retorno Sucesso deletado</response>
+            <response code="400">Retorno Falha na tentativa de deletar</response>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Controllers.CriminalCodeController.Get(System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Filtrar codigo Penal
+            </summary>
+            <param name="filter">Campo para filtrar codigo penal</param>
+            <param name="by">Coluna que será filtrado</param>
+            <param name="orderBy">Coluna para ordenação</param>
+            <param name="way">Caminho da ordenação: asc / desc </param>
+            <param name="page">Pagina da ordenação</param>
+            <response code="200">Retorno Sucesso Filtrado</response>
+            <response code="400">Retorno Falha na tentativa de filtrar</response>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Controllers.CriminalCodeController.Put(System.Int32,ControlePenal.Models.CriminalCodeModel)">
+            <summary>
+            Editar codigo penal
+            </summary>
+            <param name="id">Campo ID para editar na bse de dados</param>
+            <param name="criminalCode">Objeto criminalCode para edição</param>
+            <response code="200">Retorno Sucesso editar</response>
+            <response code="400">Retorno Falha na tentativa de editar</response>
+            <returns></returns>
+        </member>
+        <member name="M:ControlePenal.Controllers.CriminalCodeController.Get(System.Int32)">
+            <summary> 
+            Buscar codigo penal
+            </summary>
+            <param name="id">ID para buscar na base de dados</param>
+            <response code="200">Retorno Sucesso busca na Base</response>
+            <response code="400">Retorno Falha na tentativa de buscar informação</response>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

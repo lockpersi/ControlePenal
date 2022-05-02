@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "1d4eae9c-1516-4036-8476-fe1dd8e0526a",
+		"name": "CDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7083/api/CriminalApp?filter=Infração&by=Name&orderBy=Name&way=asc&page=0",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE0NzI0MjcsImlzcyI6InRlc3RlQHRlc3RlLmNvbSIsImF1ZCI6InRlc3RlQHRlc3RlLmNvbSJ9.3aAtOym1KrcKSKwwReDUZGcO0iNFUe3DN5wq0jldUwE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7083/api/CriminalApp?filter=Infração&by=Name&orderBy=Name&way=asc&page=0",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"CriminalApp"
+					],
+					"query": [
+						{
+							"key": "filter",
+							"value": "Infração"
+						},
+						{
+							"key": "by",
+							"value": "Name"
+						},
+						{
+							"key": "orderBy",
+							"value": "Name"
+						},
+						{
+							"key": "way",
+							"value": "asc"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7083/api/CriminalApp/Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"cda\",\r\n  \"password\": \"cda\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7083/api/CriminalApp/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"CriminalApp",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7083/api/CriminalApp/Create",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE0NzI0MjcsImlzcyI6InRlc3RlQHRlc3RlLmNvbSIsImF1ZCI6InRlc3RlQHRlc3RlLmNvbSJ9.3aAtOym1KrcKSKwwReDUZGcO0iNFUe3DN5wq0jldUwE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Falsificação de documento particular\",\r\n  \"description\": \"\",\r\n  \"penalty\": 1,\r\n  \"prisonTime\": 20,\r\n  \"statusId\": 1,\r\n  \"createDate\": \"2022-05-02T05:18:41.205Z\",\r\n  \"updateDate\": \"2022-05-02T05:18:41.205Z\",\r\n  \"createUserId\": 1,\r\n  \"updateUserId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7083/api/CriminalApp/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"CriminalApp",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
